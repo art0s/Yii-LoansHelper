@@ -1,0 +1,24 @@
+Some financial functions for Yii framework.
+
+1. Copy file of class "LoansHelper.php" to "protected/helpres/" directory of your project
+
+2. In config:
+	...
+	'import' => array(
+		...
+		'application.helpers.*',
+		...
+	),
+	...
+
+3. Example of use:
+	LoansHelper::annuity_payment( 12000, 6, 36 );
+
+
+Function list:
+
+Methods:
+	annuity_payment
+	payments_graph_annuity
+	payments_graph_diff
+	PSK
